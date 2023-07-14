@@ -5,7 +5,7 @@ from .startup import start_queue_listening
 
 
 class NonblockingLoggingConfig(AppConfig):
-    name = "nonblocking_logging.django"
+    name = "nonblocking_logging.integrations.django"
     verbose_name = _("Nonblocking Logging")
     default_auto_field = "django.db.models.BigAutoField"
 
