@@ -46,5 +46,5 @@ class TelegramHandler(logging.Handler):
         requests.post(
             f'https://api.telegram.org/bot{self._token}/sendDocument',
             data={'chat_id': self._chat_id, 'caption': subject},
-            files={'document': PseudoFile(message, document_name)},
+            files={'document': PseudoFile(document_name, message)},
         )
